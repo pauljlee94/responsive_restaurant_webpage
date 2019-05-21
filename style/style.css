@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: grey;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
