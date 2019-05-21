@@ -35,8 +35,8 @@ nav {
     grid-area: nav;
     width: 100vw;
     height: 4em;
-    border-bottom: rgb(70, 70, 70) solid 1px;
     background-color:white;
+    color: rgb(20, 20, 20);
     z-index: 100;
 }
 
@@ -64,7 +64,7 @@ nav a:hover{
     background: url(../img/restaurant.jpg);
     background-size: cover;
     background-position: center;
-    color: rgb(230, 230, 230);
+    color: rgb(243, 243, 243);
     height: 100vh;
     font-family: 'Roboto Mono', serif;
 }
