@@ -1,19 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    background-color: grey;
+body {
+    font-family: 'Arvo', serif;
 }
 
-nav li {
-    display: inline;
+.container {
+    grid-template-areas:
+    "nav"
+    "title"
+    "intro"
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    grid-area: nav;
+    width: 100vw;
+    height: 4em;
+    border-bottom: rgb(70, 70, 70) solid 1px;
+    background-color:white;
+}
+
+nav ul {
+    font-weight: 700;
+    line-height: 4em;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
     list-style-type: none;
 }
 
 nav a {
     text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: rgb(82, 82, 82);
+}
+
+.title_section{
+    display:flex;
+    grid-area: title;
+    background: url(../img/restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(230, 230, 230);
+    height: 100vh;
+    font-family: 'Roboto Mono', serif;
+}
+
+.title{
+    margin: auto;
+    text-align: center;
+    width: 40vw;
+    padding: 0.5em;
+    background-color: black;
+    font-family: 'Roboto Mono', serif;
+}
+
+.title h1 {
+    font-size: 12vw;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+@media (min-width: 600px) {
+    .title{
+        width:17em;
+    }
+    
+    .title h1{
+        font-size: 5em;
+    }
+}
+
+.intro {
+    grid-area: intro;
 }
