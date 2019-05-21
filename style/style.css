@@ -17,6 +17,17 @@ body {
     "intro"
 }
 
+.anchor {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: -4em;
+    left: 0;
+    visibility: hidden;
+}
+
 nav {
     margin: 0;
     padding: 0;
@@ -84,33 +95,47 @@ nav a:hover{
 }
 
 .intro {
+    display: flex;
+    flex-direction: column;
     grid-area: intro;
     position: relative;
     background-color: black;
     color: white;
-    height: 92vh;
-    text-align: center;
     padding: 2em 1em;
+    text-align:center;
 }
 
 .intro img{
-    width: 88vw;
+    width: 85vw;
+}
+
+.intro_about {
+    text-align:left;
+    padding: 1em 2em;
+    font-size: 3.5vw;
 }
 
 .intro h1 {
     font-size: 2em;
     font-weight: 500;
     text-decoration: underline;
-    margin: 1em 0 0 0;
+}
+@media (min-width: 600px) {
+    .intro_about{
+        font-size: 1em;
+    }
 }
 
-.anchor {
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    z-index: -1;
-    top: -4em;
-    left: 0;
-    visibility: hidden;
+@media (min-width: 1200px) {
+    .intro {
+        flex-direction: row;
+    }
+    .intro img{
+        width: 50vw;
+    }
+
+    .intro_about{
+        font-size: 1.2vw;
+        padding: 0 2em;
+    }
 }
