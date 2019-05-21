@@ -26,6 +26,7 @@ nav {
     height: 4em;
     border-bottom: rgb(70, 70, 70) solid 1px;
     background-color:white;
+    z-index: 100;
 }
 
 nav ul {
@@ -84,4 +85,32 @@ nav a:hover{
 
 .intro {
     grid-area: intro;
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 92vh;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.intro img{
+    width: 88vw;
+}
+
+.intro h1 {
+    font-size: 2em;
+    font-weight: 500;
+    text-decoration: underline;
+    margin: 1em 0 0 0;
+}
+
+.anchor {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: -4em;
+    left: 0;
+    visibility: hidden;
 }
