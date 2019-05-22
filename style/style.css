@@ -111,11 +111,11 @@ nav a:hover{
     grid-area: intro;
     position: relative;
     background-color: white;
-    color: black;
+    color: rgb(27, 27, 27);
     margin: 3em 0 3em 0;
-    padding: 3em 1em 3em 2em;
+    padding: 3em 2em 3em 2em;
     text-align:center;
-    background-color: rgb(194, 217, 226);
+    border: 2px rgb(77, 77, 77) solid;
 }
 
 .intro img{
@@ -222,6 +222,10 @@ nav a:hover{
     text-align: center;
 }
 
+#menu_title {
+    text-align: center;
+}
+
 @media (min-width: 750px) {
     .menu {
         grid-template-columns: 1fr 1fr;
@@ -229,7 +233,7 @@ nav a:hover{
     }
     #menu_title{
         grid-row: 1;
-        justify-self: start;
+        justify-self: center;
     }
 
     #coffee{
