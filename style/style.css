@@ -15,6 +15,12 @@ body {
     font-family: "Roboto Mono";
 }
 
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 .main {
     padding: 0 1em;
 }
@@ -26,16 +32,28 @@ body {
     "menu"
 }
 
-.anchor {
+.anchor1 {
     display: block;
     position: absolute;
     width: 0;
     height: 0;
     z-index: -1;
-    top: -4em;
+    top: -6em;
     left: 0;
     visibility: hidden;
 }
+
+.anchor2 {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: -3em;
+    left: 0;
+    visibility: hidden;
+}
+
 
 nav {
     margin: 0;
@@ -93,6 +111,7 @@ nav a:hover{
     font-size: 12vw;
     font-weight: 500;
     line-height: 1em;
+    text-decoration: none;
 }
 
 @media (min-width: 600px) {
@@ -116,6 +135,8 @@ nav a:hover{
     padding: 3em 2em 3em 2em;
     text-align:center;
     border: 2px rgb(77, 77, 77) solid;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+
 }
 
 .intro img{
@@ -125,12 +146,6 @@ nav a:hover{
 .intro_about {
     text-align:left;
     font-size: 3.5vw;
-}
-
-.intro h1 {
-    font-size: 2em;
-    font-weight: 700;
-    text-decoration: underline;
 }
 
 .intro p {
@@ -292,4 +307,56 @@ nav a:hover{
     .menu img {
         width: 20em;
     }
+}
+
+.contact {
+    position: relative;
+    margin: 5em auto 5em auto;
+    width: 20em;
+}
+
+.contact h1{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+input,textarea {
+    width: 100%;
+    border:1px solid rgb(68, 68, 68);
+}
+
+textarea {
+    height: 10em;
+}
+
+.submitButton {
+    font-family: "Roboto Mono";
+    text-align: center;
+    width: 5em;
+}
+
+footer{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    text-align:center;
+}
+
+footer ul {
+    font-weight: 700;
+    line-height: 4em;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+
+.submit {
+    text-align:center;
+    margin-top: 1em;
+
 }

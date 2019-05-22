@@ -14,11 +14,11 @@
         <div class="container">
             <nav data-aos="fade-down" data-aos-duration="1000" class="navbar">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#anchor1">About</a></li>
-                    <li><a href="#anchor2">Menu</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#menu">Menu</a></li>
                     <li><a href="#">Photos</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <section class="title_section">
@@ -30,7 +30,7 @@
             </section>
             <div class="main">
                 <section class="intro">
-                    <span class="anchor" id="anchor1"></span>
+                    <span class="anchor1" id="about"></span>
                     <div data-aos="fade-right" data-aos-duration="2000" class="intro_img">
                             <div class="carousel">
                                     <div class="carousel-inner">
@@ -81,21 +81,21 @@
                         </p>
                     </div>
                 </section>
-                <section class="menu" id="menu">
-                    <span class="anchor" id="anchor2"></span>
+                <section class="menu">
                     <h1 id="menu_title" data-aos="fade-right" data-aos-duration="2000">Menu</h1>
+                    <span class="anchor2" id="menu"></span>
                     <h2 id="coffee" data-aos="fade-right" data-aos-duration="2000">Coffee</h2>
                     <div id="coffee_img" data-aos="fade-right" data-aos-duration="2000">
                         <img src="./img/menu_coffee.jpg">
                     </div>
                     <div data-aos="fade-left" data-aos-duration="2000" id="coffee_menu" class="items">
                         <ul>
-                            <li>Coffee............................3</li>
-                            <li>Iced Coffee.......................3</li>
-                            <li>Cold Brew.........................4</li>
-                            <li>Espresso..........................2</li>
-                            <li>Latte.............................5</li>
-                            <li>Mocha.............................5</li>
+                            <li>Coffee..........................3</li>
+                            <li>Iced Coffee.....................3</li>
+                            <li>Cold Brew.......................4</li>
+                            <li>Espresso........................2</li>
+                            <li>Latte...........................5</li>
+                            <li>Mocha...........................5</li>
                         </ul>
                     </div>
                     <h2 id="food" data-aos="fade-right" data-aos-duration="2000">Food</h2>
@@ -104,17 +104,17 @@
                     </div>
                     <div data-aos="fade-left" data-aos-duration="2000" id="food_menu" class="items">
                         <ul>
-                            <li>Avo Toast.........................8</li>
+                            <li>Avo Toast.......................8</li>
                             <p>It's yummy.</p>
-                            <li>French Toast......................8</li>
+                            <li>French Toast....................8</li>
                             <p>It's crunchy.</p>
-                            <li>Sandwich..........................9</li>
+                            <li>Sandwich........................9</li>
                             <p>Melted cheddar with homemade tomato soup.</p>
-                            <li>Bacon & Eggs......................7</li>
+                            <li>Bacon & Eggs....................7</li>
                             <p>It's yummy AND crunchy.</p>
-                            <li>Pancakes..........................5</li>
+                            <li>Pancakes........................5</li>
                             <p>It's soggy AND yummy.</p>
-                            <li>Waffles...........................5</li>
+                            <li>Waffles.........................5</li>
                             <p>It's soggy AND crunchy.</p>
                         </ul>
                     </div>
@@ -124,16 +124,58 @@
                     </div>
                     <div data-aos="fade-left" data-aos-duration="2000" id="beer_menu" class="items">
                         <ul>
-                            <li>Lager.............................3</li>
-                            <li>Amber Ale.........................5</li>
-                            <li>IPA...............................5</li>
-                            <li>Pale Ale..........................2</li>
-                            <li>Rotating.........................MP</li>
+                            <li>Lager...........................3</li>
+                            <li>Amber Ale.......................5</li>
+                            <li>IPA.............................5</li>
+                            <li>Pale Ale........................2</li>
+                            <li>Rotating.......................MP</li>
                         </ul>
                     </div>
-                    <footer></footer>
+                </section>
+                <section class ="contact" id="contact">
+                    <div class='contactform'></div>
+                        <h1>Contact Us</h1>
+                        <span class="anchor3" id="contact"></span>
+                        <form action="https://formspree.io/pauljlee94@gmail.com" method="POST" />
+            
+                            <div class="input">
+                            <label for="name">Name</label>
+                            <br>
+                            <input id="name" name="name" type="text">
+                            <br>    
+            
+                            <label for="email">Email</label>
+                            <br>
+                            <input id="email" name="email" type="text">
+                            <br>
+            
+                            <label for="subject">Subject</label>
+                            <br>
+                            <input id="subject" name="subject" type="text">
+                            <br>
+            
+                            <label for="message">Message</label>
+                            <br>
+                            <textarea id="message" name="message"></textarea>
+                            <br>
+                            </div>
+                            <div class="submit">
+                            <input class='submitButton' type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
                 </section>
             </div>
+            <footer>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#anchor1">About</a></li>
+                    <li><a href="#anchor2">Menu</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <p>© 404 Cafe</p>
+            </footer>
         </div>
         <script>
             AOS.init();
