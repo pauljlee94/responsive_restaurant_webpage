@@ -4,7 +4,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>My Restaurant</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./style/style.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./script/script.js"></script>
     </head>
     <body>
         <div class="container">
@@ -20,15 +23,16 @@
             <section class="title_section">
                 <div class="title">
                     <h1>404 Cafe</h1>
+                    <br>
                     <p>Coffe & Bar</p>
                 </div>
             </section>
             <section class="intro">
                 <span class="anchor" id="anchor1"></span>
-                <div class="intro_img">
+                <div data-aos="fade-right" data-aos-duration="3000" class="intro_img">
                     <img src="img/coffee.jpg">
                 </div>
-                <div class="intro_about">
+                <div data-aos="zoom-in-left" data-aos-duration="2000" class="intro_about">
                     <h1>Who we are</h2>
                     <br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -59,6 +63,8 @@
 
             </section>
         </div>
-        <script src="./script/script.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

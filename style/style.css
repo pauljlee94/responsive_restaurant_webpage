@@ -4,6 +4,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,6 +29,24 @@ body {
     visibility: hidden;
 }
 
+@keyframes navslide {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes phasein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
 nav {
     margin: 0;
     padding: 0;
@@ -38,6 +57,7 @@ nav {
     background-color:white;
     color: rgb(20, 20, 20);
     z-index: 100;
+    animation: 1s ease-out 0s 1 navslide;
 }
 
 nav ul {
@@ -73,9 +93,10 @@ nav a:hover{
     margin: auto;
     text-align: center;
     width: 40vw;
-    padding: 0.5em;
+    padding: 0.5em 0 1em 0;
     background-color: black;
     font-family: 'Roboto Mono', serif;
+    animation: 2s ease-out 0s phasein;
 }
 
 .title h1 {
@@ -137,5 +158,11 @@ nav a:hover{
     .intro_about{
         font-size: 1.2vw;
         padding: 0 2em;
+    }
+}
+
+@media (max-width: 450px) {
+    .intro img {
+        display: none;
     }
 }
