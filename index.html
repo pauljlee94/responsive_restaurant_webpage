@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/carousel.css">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="./script/script.js"></script>
     </head>
@@ -15,7 +16,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#anchor1">About</a></li>
-                    <li><a href="#">Menu</a></li>
+                    <li><a href="#anchor2">Menu</a></li>
                     <li><a href="#">Photos</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -80,7 +81,56 @@
                         </p>
                     </div>
                 </section>
-                <section>
+                <section class="menu" id="menu">
+                    <span class="anchor" id="anchor2"></span>
+                    <div data-aos="fade-right" data-aos-duration="2000">
+                        <h1>Menu</h1>
+                        <h2>Coffee</h2>
+                        <img src="./img/menu_coffee.jpg">
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000" class="items">
+                        <ul>
+                            <li>Coffee............................3</li>
+                            <li>Iced Coffee.......................3</li>
+                            <li>Cold Brew.........................4</li>
+                            <li>Espresso..........................2</li>
+                            <li>Latte.............................5</li>
+                            <li>Mocha.............................5</li>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="2000">
+                        <h2>Food</h2>
+                        <img src="./img/menu_food.jpg">
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000" class="items">
+                        <ul>
+                            <li>Avo Toast.........................8</li>
+                            <p>It's yummy.</p>
+                            <li>French Toast......................8</li>
+                            <p>It's crunchy.</p>
+                            <li>Sandwich..........................9</li>
+                            <p>Melted cheddar with homemade tomato soup.</p>
+                            <li>Bacon & Eggs......................7</li>
+                            <p>It's yummy AND crunchy.</p>
+                            <li>Pancakes..........................5</li>
+                            <p>It's soggy AND yummy.</p>
+                            <li>Waffles...........................5</li>
+                            <p>It's soggy AND crunchy.</p>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="2000">
+                        <h2>Beer</h2>
+                        <img src="./img/menu_beer.jpg">
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000" class="items">
+                        <ul>
+                            <li>Lager.............................3</li>
+                            <li>Amber Ale.........................5</li>
+                            <li>IPA...............................5</li>
+                            <li>Pale Ale..........................2</li>
+                            <li>Rotating.........................MP</li>
+                        </ul>
+                    </div>
 
                 </section>
             </div>
