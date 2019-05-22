@@ -94,7 +94,3 @@
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
     color: #428bca;
 }
-
-.menu img {
-    width: 100%;
-}
